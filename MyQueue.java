@@ -4,7 +4,7 @@ import com.bridgelabz.linkedlist.INode;
 import com.bridgelabz.linkedlist.MyLinkedList;
 /*
  * Author: Prasad
- * Ability to create a queue of 56->30->70
+ * Ability to dequeue from the beginning
  */
 public class MyQueue {
     
@@ -34,5 +34,17 @@ public class MyQueue {
 	 */
 	public INode dequeue() {
 		return myLinkedList.pop();
+	}
+	
+	/*
+	 * isEmpty method to check queue is empty or not
+	 */
+	public boolean isEmpty() {
+		if (myLinkedList.head != null) {
+			return false;
+		}
+		else {
+			return true;
+		}
 	}
 }
